@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <link href="css/style.css"rel="stylesheet">
+
+    <!-- CDN(Content Delivery Network)의 약자. 컨텐츠를 전송하는 네트워크라는 뜻-->
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+    <script src="js/script.js"></script>
+</head>
+
+    <body>
+        <!-- 상단바 -->
+        <div id="top">
+            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
+            <input type="search" value="&#128269;검색"/>
+            <div>
+                <i class="fas fa-home"></i>
+                <i class="far fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+        <!-- 프로필 영역 -->
+        <div id="profile">
+            <div id="profile_pic">
+                <img class="circle_pic" src="images/profile.jpg">
+            </div>
+            <div id="profile_info">
+                <!-- <h2>half_bottle<br/></h2> 공간을 많이 차지해서 div로 교체. but, 현재 문서에 제목(h)가 사라지게 돼서 가급적 h가 있는 게 좋음-->
+                <div id="id">
+                    <span>kwon_aa</span>
+                    <i class="fas fa-cog"></i>
+                </div>
+                <button>프로필 편집</button>
+            </div>
+        </div>
+
+        <!-- 소개글 -->
+        <div>
+            <p>
+                <strong id="userInfo">권성아 (Seonga Kwon)</strong><br>
+                <span id="summary">개발자</span>
+            </p>   
+            <p id="profileDetail"><a href="https://blog.naver.com/vldzm_99">blog.naver.com/vldzm_99</a></p>
+        </div>
+
+        <!-- 하이라이트 -------------->
+        <div id="highlight_area">
+            <div class="highlight">
+                <div class="highlight_pic">
+                     <img class="circle_pic" src="images/hl1.jpg"> 
+                </div>
+                <div>
+                    &#127827;
+                </div>
+            </div>
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img class="circle_pic" src="images/hl2.jpg">
+                </div>
+                <div>
+                    &#127826;
+                </div>
+            </div>
+            <div></div> <!-- 비어 있는 div 태그를 활용한 그리드 정돈-->
+        </div>
+
+        <!-- 상태표시줄(통계 영역) ------------------>
+        <div id="stat_bar">
+            <div class="stat">
+                게시물<br/>
+                133
+            </div>
+            <div class="stat">
+                팔로워<br/>
+                408
+            </div>
+            <div class="stat">
+                팔로우<br/>
+                189
+            </div>
+        </div>
+
+        <!-- 아이콘 ----------->
+        <div id="sub_icons">
+            <div class="selected"> <!--현재 선택된 탭을 표시하기 위해 따로 빼줌-->
+                <i class="fas fa-border-all"></i>
+            </div>
+            <div><i class="fas fa-film"></i></div>
+            <div><i class="far fa-play-circle"></i></div>
+            <div><i class="far fa-bookmark"></i></div>
+            <div><i class="fas fa-user-tag"></i></div>
+        </div>
+
+        <!-- 게시물 썸네일 --------------->
+        <div>
+            <!-- width에 % 쓰면 반응형 웹 -->
+            <div class="thumbnail_grid">
+                <img src="images/thumbnails/1.jpg" class="thumbnail"/>
+                <img src="images/thumbnails/2.jpg" class="thumbnail"/>
+                <img src="images/thumbnails/3.jpg" class="thumbnail"/>
+            </div>
+
+            <div class="thumbnail_grid">
+                <img src="images/thumbnails/4.jpg" class="thumbnail"/>
+                <img src="images/thumbnails/5.jpg" class="thumbnail"/>
+                <img src="images/thumbnails/6.jpg" class="thumbnail"/>
+            </div>
+
+            <div class="thumbnail_grid">
+                <img src="images/thumbnails/7.jpg" class="thumbnail"/>
+                <img src="images/thumbnails/8.jpg" class="thumbnail"/>
+                <img src="images/thumbnails/9.jpg" class="thumbnail"/>
+            </div>
+
+        </div>
+    </body>
+</html>
